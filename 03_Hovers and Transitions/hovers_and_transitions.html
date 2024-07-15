@@ -1,0 +1,93 @@
+<!-- 
+    CSS -> Cascading Style Sheets
+    -> style element doesn't appear on the webpage
+    -> Inside this element css code is written which helps in modifying the appearance of the elements
+
+-->
+
+<style>
+    /* here the button{} is called as CSS Selector = which elements we're targeting */
+    /* background-color -> CSS Property */
+    /* red/blue/green/yellow -> CSS Value */
+    /* CSS Property and CSS Value are seperated by ':' and ended by a ';' */
+    /* rgb() is another representation to set the color r = red, g = green, b = blue*/
+    
+    /* button{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 95px;
+        border-radius: 2px;
+        cursor: pointer;
+    } */
+    .subscribe-button{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 95px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+    }
+    .subscribe-button:hover{
+        /* background-color: rgba(0, 200, 0, 0.7); */
+        /* background-color: rgba(200, 0, 0, 0.7); */
+        opacity: 0.7;
+        color: white;
+    }
+    .subscribe-button:active{
+        /* background-color: blue; */
+        /* background-color: rgba(200, 0, 0, 0.7); */
+        opacity: 0.5;
+        color: white;
+    }
+
+
+    .join-button{
+        background-color: white;
+        color: rgb(27, 95, 243);
+        border-color: rgb(27, 95, 243);
+        border-style: solid;
+        border-width: 1px;
+        height: 36px;
+        width: 65px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 1s;
+    }
+    .join-button:hover{
+        background-color: rgb(27, 95, 243);
+        color: white;
+        border-color: rgb(27, 95, 243);
+    }
+    .join-button:active{
+        opacity: 0.7;
+    }
+
+    .tweet-button{
+        background-color: rgb(5, 132, 218);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 75px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.15s;
+    }
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* try surfing the internet to get the css properties as it is hard to remember each and every property */
+    /* If we use the Selector as an HTML Element then all elements of that type present on that page get the styles of that element */
+    /* To overcome this problem we make use of Class-Selectors as they help in targeting the HTML elements individually */
+</style>
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+<button class="tweet-button">Tweet</button>
